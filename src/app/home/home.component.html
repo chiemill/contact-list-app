@@ -1,0 +1,13 @@
+  <!-- contact form -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 mb-5">
+        <app-form [contact]="selectedContact" (contactSubmitted)="onContactSubmitted($event)"></app-form>
+      </div>
+      <div class="col-sm-12">
+        <app-table [contacts]="contacts" (deleteContact)="onDeleteContact($event)"></app-table>
+      </div>
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>

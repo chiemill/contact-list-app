@@ -1,0 +1,35 @@
+<div class="container mt-4">
+  <div class="row">
+    <div class="col">
+      <p class="h1">Edit Contact</p>
+      <p class="fst-italic">Editing is the key</p>
+    </div>
+  </div>
+</div>
+
+<!-- contact form -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <form (ngSubmit)="onSubmit()">
+        <div class="mb-2">
+          <input type="text" class="form-control" placeholder="Name" [(ngModel)]="contact.name" name="name">
+        </div>
+
+        <div class="mb-2">
+          <input type="text" class="form-control" placeholder="Email" [(ngModel)]="contact.email" name="email">
+        </div>
+
+        <div class="mb-2">
+          <input type="text" class="form-control" placeholder="Contact Number" [(ngModel)]="contact.contactNumber" name="contactNumber">
+        </div>
+
+        <div class="mb-2">
+          <input type="submit" class="btn btn-primary" value="Update" a routerLink="/">
+          <a routerLink="/" class="btn btn-warning ms-2">Close</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,25 @@
+<div class="container mt-4">
+  <div class="row">
+    <div class="col">
+      <h1>View Contact</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-success">Name: <span class="fw-bold">{{ contact?.name }}</span></li>
+        <li class="list-group-item list-group-item-success">Email: <span class="fw-bold">{{ contact?.email }}</span></li>
+        <li class="list-group-item list-group-item-success">Mobile Number: <span class="fw-bold">{{ contact?.contactNumber }}</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row mt-2">
+    <div class="col">
+      <a routerLink="/home" class="btn btn-warning">Go Back</a>
+    </div>
+  </div>
+</div>
+
